@@ -301,7 +301,7 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 300px;
+  height: 250px;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
@@ -356,8 +356,8 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #fff;
-  font-weight: 300;
+  color: #000;
+  font-weight: 200;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
@@ -379,7 +379,6 @@ body {
 }
 .nav-icon,
 .main-nav-link {
-  float: left;
   color: #fff;
   opacity: 0.6;
   text-decoration: none;
@@ -405,6 +404,8 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
+  font-size: 20px;
+  color: #000;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -1038,7 +1039,7 @@ a.article-title:hover {
   color: #ddd;
 }
 #footer {
-  background: #262a30;
+  background: #ccc;
   padding: 50px 0;
   border-top: 1px solid #ddd;
   color: #999;
@@ -1281,7 +1282,7 @@ pre .javascript .function {
   border-radius: 3px;
 }
 .widget a {
-  color: #258fb8;
+  color: #000;
   text-decoration: none;
 }
 .widget a:hover {
@@ -1300,6 +1301,7 @@ pre .javascript .function {
   list-style: disc;
 }
 .widget {
+  background: #fff;
   line-height: 1.6em;
   word-wrap: break-word;
   font-size: 0.9em;
