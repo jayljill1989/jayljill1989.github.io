@@ -214,12 +214,42 @@
       
       &copy; 2024 John Doe<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <br>
+      <span id="busuanzi_container_site_uv">
+      Total Visitors 👤 <span id="busuanzi_value_site_uv"></span>
+      <br>
+      <span id="sitetime"></span>
+</span>
     </div>
   </div>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_uv">
-  👤Total Visitors <span id="busuanzi_value_site_uv"></span> |
-</span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        var t1 = Date.UTC(2024,6,27,00,00,00);  //此处填写建站时间 依次为 年,月,日,时,分,秒注意格式 半角,
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML="Yuka留美洋果子店's Blog已成立 🕓 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小時 "+diffMinutes+" 分鐘 "+diffSeconds+" 秒"; //此处为显示的内容
+    }
+    siteTime();
+</script>
 
 </footer>
 
