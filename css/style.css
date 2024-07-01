@@ -389,6 +389,7 @@ body {
   transition: opacity 0.2s;
   display: block;
   padding: 20px 15px;
+  background: white !important;
   margin-left: -2cm; /* 距離左側邊界 2cm */
   margin-top: 1cm; /* 距離上側邊界 2cm */
 }
