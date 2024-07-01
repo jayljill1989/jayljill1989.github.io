@@ -333,7 +333,7 @@ body {
 }
 #header-inner {
   position: relative;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 #banner {
   position: absolute;
@@ -393,12 +393,12 @@ body {
   margin-top: 1cm; /* 距離上側邊界 2cm */
 }
 
-.adjust
-  position: absolute
-  top: -30px
-  left: -100px
-  right: 0
-
+.adjust{
+  position: absolute !important;
+  top: -30px !important;
+  left: -100px !important;
+  right: 0;
+}
 .nav-icon:hover,
 .main-nav-link:hover {
   opacity: 0.7;
