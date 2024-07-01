@@ -380,7 +380,7 @@ body {
 .nav-icon,
 .main-nav-link {
   color: #fff;
-  opacity: 0.6;
+  opacity: 1;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.2s;
@@ -389,10 +389,19 @@ body {
   transition: opacity 0.2s;
   display: block;
   padding: 20px 15px;
+  margin-left: -2cm; /* 距離左側邊界 2cm */
+  margin-top: 1cm; /* 距離上側邊界 2cm */
 }
+
+.adjust
+  position: absolute
+  top: -30px
+  left: -100px
+  right: 0
+
 .nav-icon:hover,
 .main-nav-link:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 .nav-icon {
   text-align: center;
