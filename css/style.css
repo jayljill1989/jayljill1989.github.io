@@ -388,7 +388,7 @@ body {
   -ms-transition: opacity 0.2s;
   transition: opacity 0.2s;
   display: block;
-  padding: 20px 15px;
+  padding: 10px 20px !important;
   background: white !important;
   margin-left: -2cm; /* 距離左側邊界 2cm */
   margin-top: 1cm; /* 距離上側邊界 2cm */
@@ -1356,3 +1356,7 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+
+.about-button:hover {
+        background-color: #f0f0f0; /* 悬停时背景色变化 */
+    }
